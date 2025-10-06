@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Dashboard from './components/Dashboard';   // ✅ use full Dashboard, not QRScanner
+import Dashboard from './components/DashBoard';   // ✅ use full Dashboard, not QRScanner
 import Login from './page/login';
 
 // API base
