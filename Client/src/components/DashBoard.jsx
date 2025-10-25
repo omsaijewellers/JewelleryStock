@@ -166,8 +166,8 @@ export default function Dashboard({ apiBase, token, onLogout }) {
               </select>
               <input required type="number" step="0.01" placeholder="Weight (g)" className="p-2 border rounded" value={form.weight} onChange={(e)=>setForm({...form, weight:parseFloat(e.target.value)})}/>
               <input type="number" step="0.01" placeholder="Wastage (g)" className="p-2 border rounded" value={form.wastage} onChange={(e)=>setForm({...form, wastage:parseFloat(e.target.value)})}/>
-              <input required type="number" placeholder="Pieces" className="p-2 border rounded" value={form.pieces} onChange={(e)=>setForm({...form, pieces:parseInt(e.target.value||0)})}/>
-              <input required type="number" placeholder="Price" className="p-2 border rounded" value={form.price} onChange={(e)=>setForm({...form, price:parseFloat(e.target.value||0)})}/>
+              <input required type="number" placeholder="Pieces" className="p-2 border rounded" value={form.pieces} onChange={(e)=>setForm({...form, pieces:parseInt(e.target.value)})}/>
+              <input required type="number" placeholder="Price" className="p-2 border rounded" value={form.price} onChange={(e)=>setForm({...form, price:parseFloat(e.target.value)})}/>
               <div className="md:col-span-3 flex gap-3">
                 <button className="bg-green-600 text-white px-4 py-2 rounded">Add Item</button>
                 <button type="button" onClick={()=>setForm({ productId:'', name:'', category:'Gold', weight:0, wastage:0, pieces:0, price:0 })} className="px-4 py-2 border rounded">Reset</button>
